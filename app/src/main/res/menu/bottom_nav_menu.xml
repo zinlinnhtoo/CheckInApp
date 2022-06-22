@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/reportFragment"
+        android:title="@string/lbl_reporting_bottom_nav"/>
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="@string/lbl_home_bottom_nav"/>
+
+    <item
+        android:id="@+id/settingFragment"
+        android:title="@string/lbl_setting_bottom_nav"/>
+
+</menu>

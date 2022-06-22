@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rlBannerLogin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_banner_login"
+            android:background="@color/colorPrimaryLight">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvBannerLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorAccent"
+                android:text="@string/lbl_frontiian_s_attendancee"
+                android:textSize="@dimen/text_regular_3x"
+                android:layout_marginBottom="@dimen/margin_small"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivBannerLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tvBannerLogin"
+                android:src="@drawable/logo_frontiir"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlBannerLogin">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLoginTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_log_in_with_ldap_account"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/text_regular_2x"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_email"
+                android:layout_below="@id/tvLoginTitle"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:layout_marginStart="@dimen/margin_xxlarge"
+                android:textSize="@dimen/text_regular"
+                android:textColor="@color/colorSecondaryText"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailTextField"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginStart="@dimen/margin_xxlarge"
+                android:layout_marginEnd="@dimen/margin_xxlarge"
+                android:layout_below="@id/tvEmail">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_password"
+                android:layout_below="@id/emailTextField"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                android:layout_marginStart="@dimen/margin_xxlarge"
+                android:textSize="@dimen/text_regular"
+                android:textColor="@color/colorSecondaryText"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordTextField"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginStart="@dimen/margin_xxlarge"
+                android:layout_marginEnd="@dimen/margin_xxlarge"
+                android:layout_below="@id/tvPassword">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/passwordTextField"
+                android:backgroundTint="@color/colorAccent"
+                android:text="@string/lbl_btn_login"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                android:textAllCaps="false"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

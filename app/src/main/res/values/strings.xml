@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CheckInApp</string>
+    <string name="lbl_reporting_bottom_nav">Reporting</string>
+    <string name="lbl_home_bottom_nav">Home</string>
+    <string name="lbl_setting_bottom_nav">Setting</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="lbl_frontiian_s_attendancee">Frontiian\'s Attendancee</string>
+    <string name="lbl_log_in_with_ldap_account">Log in with LDAP account</string>
+    <string name="lbl_email">Email</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_btn_login">Login</string>
+    <string name="lbl_home_toolbar">Home</string>
+    <string name="lbl_status">Status</string>
+    <string name="lbl_total">Total</string>
+    <string name="lbl_check_in_time">Check in Time</string>
+</resources>
