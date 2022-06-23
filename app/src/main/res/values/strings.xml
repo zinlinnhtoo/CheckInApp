@@ -17,4 +17,13 @@
     <string name="lbl_my_team">My Team</string>
     <string name="lbl_check_in_button">Check in</string>
     <string name="lbl_apply_leave_button">Leave Apply</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lbl_status_in_team_detail">Status:</string>
+    <string name="lbl_team_toolbar">My Team</string>
+    <string name="lbl_report_toolbar">Report</string>
+    <string name="lbl_date">Date:</string>
+    <string name="lbl_check_in">Check In:</string>
+    <string name="lbl_total_report">Total:</string>
+    <string name="lbl_check_out_report">Check Out:</string>
 </resources>

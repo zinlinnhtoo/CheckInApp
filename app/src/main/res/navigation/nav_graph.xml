@@ -9,7 +9,11 @@
         android:id="@+id/homeFragment"
         android:name="com.example.checkinapp.fragment.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_teamDetailFragment"
+            app:destination="@id/teamDetailFragment" />
+    </fragment>
     <fragment
         android:id="@+id/reportFragment"
         android:name="com.example.checkinapp.fragment.ReportFragment"
@@ -20,4 +24,9 @@
         android:name="com.example.checkinapp.fragment.SettingFragment"
         android:label="fragment_setting"
         tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/teamDetailFragment"
+        android:name="com.example.checkinapp.fragment.TeamDetailFragment"
+        android:label="@string/lbl_team_toolbar"
+        tools:layout="@layout/fragment_team_detail" />
 </navigation>
