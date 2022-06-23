@@ -13,4 +13,8 @@
     <string name="lbl_status">Status</string>
     <string name="lbl_total">Total</string>
     <string name="lbl_check_in_time">Check in Time</string>
+    <string name="lbl_check_out_time">Check Out Time</string>
+    <string name="lbl_my_team">My Team</string>
+    <string name="lbl_check_in_button">Check in</string>
+    <string name="lbl_apply_leave_button">Leave Apply</string>
 </resources>

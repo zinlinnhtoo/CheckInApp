@@ -30,5 +30,9 @@
 
 
     <dimen name="height_banner_login">300dp</dimen>
+    <dimen name="margin_start_check_in_time">60dp</dimen>
+    <dimen name="margin_end_check_out_time">80dp</dimen>
+    <dimen name="width_apply_leave_button">180dp</dimen>
+    <dimen name="width_check_in_button">180dp</dimen>
 
 </resources>
