@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/reportFragment"
-        android:title="@string/lbl_reporting_bottom_nav"/>
+        android:title="@string/lbl_reporting_bottom_nav"
+        android:icon="@drawable/ic_report"
+        android:iconTint="@color/white"
+        app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/homeFragment"
-        android:title="@string/lbl_home_bottom_nav"/>
+        android:title="@string/lbl_home_bottom_nav"
+        android:icon="@drawable/ic_baseline_home_white_24dp"
+        app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/settingFragment"
-        android:title="@string/lbl_setting_bottom_nav"/>
+        android:title="@string/lbl_setting_bottom_nav"
+        android:icon="@drawable/ic_baseline_settings_white_24dp"
+        app:showAsAction="ifRoom"/>
 
 </menu>

@@ -32,10 +32,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/appBar"
-            android:background="@drawable/background_rounded_textfield"
+            android:layout_marginStart="@dimen/margin_medium_2"
             android:layout_marginTop="@dimen/margin_medium_2"
-            android:layout_marginStart="@dimen/margin_medium"
-            android:layout_marginEnd="@dimen/margin_medium">
+            android:layout_marginEnd="@dimen/margin_medium_2"
+            android:background="@drawable/background_rounded_textfield">
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvStatus"
@@ -54,14 +54,206 @@
                 android:layout_height="wrap_content"
                 android:layout_alignBaseline="@id/tvStatus"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="@dimen/margin_medium_2"
-                android:layout_marginTop="@dimen/margin_medium_2"
-                android:layout_marginEnd="@dimen/margin_medium_2"
+                android:paddingStart="@dimen/margin_medium_2"
+                android:paddingTop="@dimen/margin_medium_2"
+                android:paddingEnd="@dimen/margin_medium_2"
+                android:paddingBottom="@dimen/margin_medium_2"
                 android:text="Active"
                 android:textColor="@color/green_active"
                 android:textSize="@dimen/text_regular_2x" />
 
         </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlStatus"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:layout_marginEnd="@dimen/margin_medium_2"
+            android:background="@drawable/background_rounded_textfield">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/margin_medium_2"
+                android:paddingTop="@dimen/margin_medium_2"
+                android:paddingBottom="@dimen/margin_medium_2"
+                android:text="@string/lbl_total"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTotalPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tvTotal"
+                android:layout_alignParentEnd="true"
+                android:paddingStart="@dimen/margin_medium_2"
+                android:paddingTop="@dimen/margin_medium_2"
+                android:paddingEnd="@dimen/margin_medium_2"
+                android:paddingBottom="@dimen/margin_medium_2"
+                android:text="5.3 hrs"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_regular_2x" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlCheckIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlTotal"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:layout_marginEnd="@dimen/margin_medium_2"
+            android:background="@drawable/background_rounded_textfield">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCheckInTimeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:text="@string/lbl_check_in_time"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCheckInTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCheckInTimeLabel"
+                android:layout_marginStart="@dimen/margin_start_check_in_time"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_medium_2"
+                android:text="08:00"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_regular_3x" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/margin_xxlarge"
+                android:layout_centerInParent="true"
+                android:background="@color/colorBorder" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCheckOutTimeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:layout_marginEnd="@dimen/margin_medium_2"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:text="@string/lbl_check_out_time"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCheckOutTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCheckOutTimeLabel"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_end_check_out_time"
+                android:layout_marginBottom="@dimen/margin_medium_2"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_regular_3x" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlMyTeam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlCheckIn"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:layout_marginEnd="@dimen/margin_medium_2"
+            android:background="@drawable/background_my_team_textfield">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMyTeam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:text="@string/lbl_my_team"
+                android:textSize="@dimen/text_regular"
+                android:textColor="@color/colorAccent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivMyTeamArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium_2"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right_white_24dp"
+                app:tint="@color/colorAccent" />
+
+        </RelativeLayout>
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/rlMyTeam"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginEnd="@dimen/margin_medium_2"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnApplyLeave"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="@dimen/width_apply_leave_button"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/map"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:maxLines="1"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium"
+            android:text="@string/lbl_apply_leave_button"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_small"
+            app:icon="@drawable/ic_baseline_today_accent_24dp"
+            app:iconTint="@color/colorAccent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCheckIn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="@dimen/width_check_in_button"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/map"
+            android:layout_alignEnd="@id/btnApplyLeave"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium_2"
+            android:backgroundTint="@color/colorAccent"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium"
+            android:text="@string/lbl_check_in_button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_small"
+            app:icon="@drawable/ic_baseline_location_on_white_24dp"
+            app:iconTint="@color/white" />
 
 
     </RelativeLayout>
