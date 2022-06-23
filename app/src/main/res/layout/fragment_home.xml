@@ -172,7 +172,7 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/rlMyTeam"
+            android:id="@+id/btnMyTeam"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/rlCheckIn"
@@ -190,8 +190,8 @@
                 android:layout_marginEnd="@dimen/margin_medium"
                 android:layout_marginBottom="@dimen/margin_medium"
                 android:text="@string/lbl_my_team"
-                android:textSize="@dimen/text_regular"
-                android:textColor="@color/colorAccent" />
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_regular" />
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/ivMyTeamArrow"
@@ -211,7 +211,7 @@
             android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:layout_below="@id/rlMyTeam"
+            android:layout_below="@id/btnMyTeam"
             android:layout_marginTop="@dimen/margin_medium_2"
             android:layout_marginStart="@dimen/margin_medium_2"
             android:layout_marginEnd="@dimen/margin_medium_2"/>

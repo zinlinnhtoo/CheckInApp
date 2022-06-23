@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragment.ReportFragment">
-
+    tools:context=".fragment.TeamDetailFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -21,51 +20,44 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:title="@string/lbl_report_toolbar"
+                app:title="@string/lbl_team_toolbar"
                 app:titleTextColor="@color/colorAccent"/>
 
         </com.google.android.material.appbar.AppBarLayout>
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tvReportThisWeek"
+            android:id="@+id/tvStatusInTeamDetail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="This Week"
-            android:textAllCaps="false"
             android:layout_below="@id/appBar"
             android:layout_marginStart="@dimen/margin_medium_2"
             android:layout_marginTop="@dimen/margin_medium_2"
-            android:textSize="@dimen/text_regular_2x"
-            android:textColor="@color/black"/>
+            android:layout_marginBottom="@dimen/margin_medium_2"
+            android:text="@string/lbl_status_in_team_detail"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_regular_2x" />
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/btnReportList"
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvActiveInTeamDetail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_report_list"
-            android:tint="@color/colorSecondaryText"
-            android:layout_alignParentEnd="true"
-            android:layout_below="@id/appBar"
+            android:layout_marginStart="@dimen/margin_small"
             android:layout_marginTop="@dimen/margin_medium_2"
-            android:layout_marginEnd="@dimen/margin_medium_2"/>
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/btnReportGraph"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_report_graph"
-            android:layout_below="@id/appBar"
-            android:layout_toStartOf="@id/btnReportList"
-            android:layout_marginTop="@dimen/margin_medium_2"
-            android:layout_marginEnd="@dimen/margin_medium"
-            android:tint="@color/colorSecondaryText"/>
+            android:layout_marginBottom="@dimen/margin_medium_2"
+            android:layout_toEndOf="@id/tvStatusInTeamDetail"
+            android:layout_alignBaseline="@id/tvStatusInTeamDetail"
+            android:text="Active"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_regular_2x" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvReport"
+            android:id="@+id/rvTeam"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tvReportThisWeek"
-            android:layout_marginTop="@dimen/margin_medium_2"/>
+            android:layout_below="@id/tvStatusInTeamDetail"
+            tools:listitem="@layout/view_holder_team"
+            tools:itemCount="5"/>
+
 
     </RelativeLayout>
 
