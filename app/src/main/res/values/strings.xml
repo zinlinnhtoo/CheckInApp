@@ -26,4 +26,33 @@
     <string name="lbl_check_in">Check In:</string>
     <string name="lbl_total_report">Total:</string>
     <string name="lbl_check_out_report">Check Out:</string>
+
+    <!-- Setting Fragment Strings   -->
+    <string name="setting_user_name">Kyaw Kyaw</string>
+    <string name="setting_profile">Profile</string>
+    <string name="setting_leave_balance">Leave Balance</string>
+    <string name="setting_pay_slip">Pay Slip</string>
+    <string name="setting_change_language">Change Language</string>
+    <string name="setting_log_out">Log Out</string>
+    <string name="setting_user_mail">kyaw.kyaw@frontirr.net</string>
+    <string name="profile_name">Name</string>
+    <string name="profile_user_name">Kyaw Kyaw</string>
+    <string name="profile_email">Email</string>
+    <string name="profile_user_email">kyaw.kyaw@frontiir.net</string>
+    <string name="profile_employee_id">Employee ID</string>
+    <string name="profile_user_employee_id">3456</string>
+    <string name="profile_ou">OU</string>
+    <string name="profile_user_ou">DevSoft</string>
+    <string name="profile_ou_1">OU-1</string>
+    <string name="profile_user_ou_1">RnD</string>
+    <string name="profile_manager">Manager</string>
+    <string name="profile_user_manager">Patrick Ong</string>
+    <string name="profile_position">Position</string>
+    <string name="profile_user_position">Associate Engineer</string>
+    <string name="taken_leave">Taken leave in this month</string>
+    <string name="annual_leave">Annual Leave:</string>
+    <string name="casual_leave">Casual Leave:</string>
+    <string name="medical_leave">Medical Leave:</string>
+    <string name="unpaid_leave">Unpaid Leave:</string>
+    <string name="total_taken_leave">Total Taken Leave:</string>
 </resources>

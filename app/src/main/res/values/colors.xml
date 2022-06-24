@@ -15,4 +15,11 @@
     <color name="colorSecondaryText">#6B6B6B</color>
     <color name="colorBorder">#D6D6D6</color>
     <color name="green_active">#29B72F</color>
+
+<!--    New Added Colors-->
+    <color name="text_background">#F8F8F8</color>
+    <color name="profile_text_view_color">#353535</color>
+    <color name="profile_text_color">#979797</color>
+    <color name="text_view_shadow_color">#D6D6D6</color>
+    <color name="date_color">#6366F1</color>
 </resources>

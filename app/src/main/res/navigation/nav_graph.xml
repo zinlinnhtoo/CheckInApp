@@ -23,10 +23,27 @@
         android:id="@+id/settingFragment"
         android:name="com.example.checkinapp.fragment.SettingFragment"
         android:label="fragment_setting"
-        tools:layout="@layout/fragment_setting" />
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_leaveBalanceFragment"
+            app:destination="@id/leaveBalanceFragment" />
+    </fragment>
     <fragment
         android:id="@+id/teamDetailFragment"
         android:name="com.example.checkinapp.fragment.TeamDetailFragment"
         android:label="@string/lbl_team_toolbar"
         tools:layout="@layout/fragment_team_detail" />
+    <fragment
+        android:id="@+id/leaveBalanceFragment"
+        android:name="com.example.checkinapp.fragment.LeaveBalanceFragment"
+        android:label="Leave Balance"
+        tools:layout="@layout/fragment_leave_balance" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.checkinapp.fragment.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

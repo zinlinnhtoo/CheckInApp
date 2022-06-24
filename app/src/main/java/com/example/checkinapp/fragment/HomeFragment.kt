@@ -48,9 +48,15 @@ class HomeFragment : Fragment(), OnMapReadyCallback {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val leaveBottomSheetFragment = LeaveBottomSheetFragment()
+
         btnMyTeam.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_teamDetailFragment)
         )
+
+        btnApplyLeave.setOnClickListener(){
+            leaveBottomSheetFragment.show(childFragmentManager,"BottomSheetFragment")
+        }
     }
 
 
