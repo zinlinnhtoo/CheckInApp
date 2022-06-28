@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@drawable/bottomsheet_background"
     tools:context=".fragment.LeaveBottomSheetFragment">
@@ -110,7 +111,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginLeft="50dp">
+                android:layout_marginLeft="90dp">
 
                 <androidx.appcompat.widget.AppCompatCheckedTextView
                     android:layout_width="wrap_content"
@@ -187,11 +188,13 @@
             android:layout_marginTop="6dp"
             android:background="@drawable/bottomsheetbackgroundleave">
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="eg:1"
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="eg:1"
                 android:textSize="17dp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/black"
                 android:layout_marginLeft="15dp"
                 android:layout_gravity="center"/>
 
@@ -219,11 +222,13 @@
             android:layout_marginTop="6dp"
             android:background="@drawable/bottomsheetbackgroundleave">
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Message..."
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Message"
                 android:textSize="17dp"
+                android:textColor="@color/black"
+                android:background="@android:color/transparent"
                 android:layout_marginLeft="15dp"
                 android:layout_gravity="center"/>
 
@@ -251,15 +256,52 @@
             android:layout_marginTop="6dp"
             android:background="@drawable/bottomsheetbackgroundleave">
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Message..."
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Message..."
                 android:textSize="17dp"
+                android:textColor="@color/black"
+                android:background="@android:color/transparent"
                 android:layout_marginLeft="15dp"
                 android:layout_gravity="center"/>
 
         </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancel"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="@dimen/width_apply_leave_button"
+            android:layout_height="60dp"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="16dp"
+            app:iconTint="@color/colorAccent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSubmitLeave"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_width="@dimen/width_apply_leave_button"
+            android:layout_height="60dp"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium"
+            android:text="Submit Leave"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:iconTint="@color/colorAccent"
+            android:layout_marginLeft="58dp"/>
 
     </LinearLayout>
 

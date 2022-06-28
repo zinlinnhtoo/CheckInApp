@@ -8,7 +8,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="@dimen/vh_lb_layout_cardview"
         app:cardCornerRadius="7dp">
 
         <LinearLayout
@@ -19,11 +19,11 @@
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="13dp"
-                android:layout_marginTop="13dp"
+                android:layout_marginStart="@dimen/vh_lb_title_margin_start"
+                android:layout_marginTop="@dimen/vh_lb_title_margin_top"
                 android:text="@string/taken_leave"
                 android:textColor="@color/black"
-                android:textSize="17dp"
+                android:textSize="@dimen/vh_lb_title"
                 android:textStyle="bold" />
 
             <LinearLayout
@@ -32,22 +32,22 @@
                 android:orientation="horizontal">
 
                 <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="355dp"
+                    android:layout_width="@dimen/vh_lb_leaves"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="@dimen/vh_lb_leaves_margin_start"
+                    android:layout_marginTop="@dimen/vh_lb_leaves_margin_top"
                     android:text="@string/annual_leave"
                     android:textColor="@color/black"
-                    android:textSize="17dp" />
+                    android:textSize="17sp" />
 
                 <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="28dp"
+                    android:layout_width="@dimen/vh_lb_leave_count_layout_width"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="@dimen/vh_lb_leaves_margin_top"
                     android:layout_marginRight="30dp"
-                    android:text="0"
+                    android:text="@string/vh_lb_leave_count"
                     android:textColor="@color/black"
-                    android:textSize="17dp" />
+                    android:textSize="17sp" />
 
             </LinearLayout>
 
@@ -57,13 +57,13 @@
                 android:orientation="horizontal">
 
                 <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="355dp"
+                    android:layout_width="@dimen/vh_lb_leaves"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="@dimen/vh_lb_leaves_margin_start"
+                    android:layout_marginTop="@dimen/vh_lb_leaves_margin_top"
                     android:text="@string/casual_leave"
                     android:textColor="@color/black"
-                    android:textSize="17dp" />
+                    android:textSize="17sp" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="28dp"
