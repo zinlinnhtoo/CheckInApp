@@ -34,5 +34,13 @@
     <dimen name="margin_end_check_out_time">80dp</dimen>
     <dimen name="width_apply_leave_button">180dp</dimen>
     <dimen name="width_check_in_button">180dp</dimen>
+    <dimen name="vh_lb_layout_cardview">10dp</dimen>
+    <dimen name="vh_lb_title_margin_start">13dp</dimen>
+    <dimen name="vh_lb_title_margin_top">13dp</dimen>
+    <dimen name="vh_lb_title">17sp</dimen>
+    <dimen name="vh_lb_leaves">355dp</dimen>
+    <dimen name="vh_lb_leaves_margin_start">20dp</dimen>
+    <dimen name="vh_lb_leaves_margin_top">8dp</dimen>
+    <dimen name="vh_lb_leave_count_layout_width">28dp</dimen>
 
 </resources>
